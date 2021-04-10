@@ -1,0 +1,728 @@
+
+@font-face {
+	font-family: 'Graphik';
+	src: url(../fonts/HKGrotesk/WEB/HKGrotesk-Bold.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal
+}
+
+@font-face {
+	font-family: 'Graphik-SemiBold';
+	src: url(../fonts/HKGrotesk/WEB/HKGrotesk-SemiBold.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal
+}
+
+body .main{
+	background-color: white;
+	
+}
+
+.grosafetyLoginCardMobile{
+	background-color: white;
+	border: 1px solid rgb(255, 255, 255);
+}
+.grosafetyTextFooterLoginCard{
+	font-family: var(--bs-font-sans-serif);
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3e4676;
+	text-align: center;
+	text-decoration: none;
+} 
+
+.grosafetyButton{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #de3e00;
+	border: 1px solid #de3e00;
+    border-radius: .2rem;
+	display: inline-block;	
+}
+
+.grosafetyButton:focus{
+	outline: 0;
+    box-shadow: 0 0 0 0.2rem #de3f0052;
+}
+
+.grosafetyButton:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color: #ff4800;
+	border: 1px solid #ff4800;
+	outline: 0;
+    box-shadow: 0 0 0 0.2rem #de3f0052;
+}
+
+#backgroundLoginImage{
+	background-image: url(../img/backgrounds/backgroundLogin.png); 
+	background-repeat: no-repeat;
+	background-size: cover;  
+	background-color: #ff4800;
+	height: 100vh;
+}
+
+
+
+/* 
+============================================START MEDIAQUERY 1=============================================
+=>Especificações da regra/condição da Media Query
+
+#DEVICE = DESKTOPS 
+#SCREEN = 1281px to higher resolution desktops
+==============================================END MEDIAQUERY 1=============================================
+*/
+@media (min-width: 1281px) {
+	.mq-align-card-center{
+		margin-left: 17%;
+	}
+
+	#colunaDireitaSaibaMaisLink.mq-link-about{
+		margin-left: 40%;
+		margin-bottom: 0%;
+	}
+
+	#colunaDireitaTitulo{
+		font-family: 'Graphik';
+		font-weight: 500;
+		margin-bottom: 4%;
+		padding-top: 5%;
+		padding-left: 3%;
+		letter-spacing: -0.03em;
+		font-size: 4rem;
+		line-height: 1.16;
+		color: rgb(255, 255, 255);
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-align: left;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;	
+	}
+	
+	#subtitulo1{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		margin-bottom: 3%;
+		font-size: 1.65rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#subtitulo2{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: left;
+		margin-left: 5%;
+		margin-bottom: 9%;
+		font-size: 1.65rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp1{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		padding-left: 4%;
+		font-size: 1.6rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp2{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: justify;
+		margin-right: 5%;
+		margin-left: 40%;
+		margin-bottom: 5%;
+		font-size: 1.6rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdsmLink:hover, .cdsmLink:focus {
+		color: white;
+		text-decoration: none;
+		background-size: 100% 8%, 100% 8%;
+	}
+	
+	#cdsmLink {
+		margin-right: 5%;
+		margin-left: 40%;
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		display: inline-flex;
+		-webkit-box-align: center;
+		align-items:center;
+		background-repeat: no-repeat;
+		background-position: 0px 100%, 100% 100%;
+		background-size: 0px 8%, 100% 8%;
+		transition: background-size 0.2s ease-in-out 0s;
+		transition-property: background-size;
+		transition-duration: 0.75s;
+		transition-timing-function: ease-in-out;
+		transition-delay: 0s;
+		background-image: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(120deg, transparent, transparent);
+	}
+}
+  
+
+
+/* 
+============================================START MEDIAQUERY 2=============================================
+=>Especificações da regra/condição da Media Query
+
+#DEVICE = Laptops, Desktops
+#SCREEN = B/w 1025px to 1280px
+==============================================END MEDIAQUERY 2=============================================
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.mq-align-card-center{
+		margin-left: 17%;
+	}
+	#colunaDireitaTitulo{
+		font-family: 'Graphik';
+		font-weight: 500;
+		margin-bottom: 4%;
+		padding-top: 5%;
+		padding-left: 3%;
+		letter-spacing: -0.03em;
+		font-size: 3.5rem;
+		line-height: 1.16;
+		color: rgb(255, 255, 255);
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-align: left;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;	
+	}
+	
+	#subtitulo1{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		margin-bottom: 3%;
+		font-size: 1.47rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#subtitulo2{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: left;
+		margin-left: 5%;
+		margin-bottom: 9%;
+		font-size: 1.47rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp1{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		padding-left: 4%;
+		font-size: 1.42rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp2{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: justify;
+		margin-right: 5%;
+		margin-left: 40%;
+		margin-bottom: 5%;
+		font-size: 1.42rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdsmLink:hover, .cdsmLink:focus {
+		color: white;
+		text-decoration: none;
+		background-size: 100% 8%, 100% 8%;
+	}
+	
+	#cdsmLink {
+		margin-right: 5%;
+		margin-left: 40%;
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		display: inline-flex;
+		-webkit-box-align: center;
+		align-items:center;
+		background-repeat: no-repeat;
+		background-position: 0px 100%, 100% 100%;
+		background-size: 0px 8%, 100% 8%;
+		transition: background-size 0.2s ease-in-out 0s;
+		transition-property: background-size;
+		transition-duration: 0.75s;
+		transition-timing-function: ease-in-out;
+		transition-delay: 0s;
+		background-image: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(120deg, transparent, transparent);
+	}
+}
+
+
+
+/* 
+============================================START MEDIAQUERY 3=============================================
+=>Especificações da regra/condição da Media Query
+
+#DEVICE = Tablets, Ipads (portrait)
+#SCREEN = B/w 768px to 1024px
+==============================================END MEDIAQUERY 3=============================================
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.mq-align-card-center{
+		margin-left: 17%;
+	}
+}
+
+
+
+/* 
+============================================START MEDIAQUERY 4=============================================
+=>Especificações da regra/condição da Media Query
+
+#DEVICE = Tablets, Ipads (landscape)
+#SCREEN = B/w 768px to 1024px
+==============================================END MEDIAQUERY 4=============================================
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+	.mq-align-card-center{
+		margin-left: 17%;
+	}
+	#colunaDireitaTitulo{
+		font-family: 'Graphik';
+		font-weight: 500;
+		margin-left: 3%;
+		padding-top: 5%;
+		letter-spacing: -0.03em;
+		font-size: 3.5rem;
+		line-height: 1.16;
+		color: rgb(255, 255, 255);
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-align: left;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;	
+	}
+	
+	#subtitulo1{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: left;
+		margin-right: 5%;
+		margin-bottom: 2%;
+		margin-left: 3%;
+		font-size: 1.47rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#subtitulo2{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		margin-bottom: 15%;
+		font-size: 1.47rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp1{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+		font-size: 1.4rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp2{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: left;
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-bottom: 10%;
+		font-size: 1.4rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdsmLink:hover, .cdsmLink:focus {
+		color: white;
+		text-decoration: none;
+		background-size: 100% 8%, 100% 8%;
+	}
+	
+	#cdsmLink {
+		margin-right: 5%;
+		margin-left: 25%;
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		display: inline-flex;
+		-webkit-box-align: center;
+		align-items:center;
+		background-repeat: no-repeat;
+		background-position: 0px 100%, 100% 100%;
+		background-size: 0px 8%, 100% 8%;
+		transition: background-size 0.2s ease-in-out 0s;
+		transition-property: background-size;
+		transition-duration: 0.75s;
+		transition-timing-function: ease-in-out;
+		transition-delay: 0s;
+		background-image: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(120deg, transparent, transparent);
+	}
+}
+
+
+
+
+
+/* 
+============================================START MEDIAQUERY 5=============================================
+=>Especificações da regra/condição da Media Query
+
+#DEVICE = Low Resolution Tablets, Mobiles (Landscape)
+#SCREEN = B/w 481px to 767px
+==============================================END MEDIAQUERY 5=============================================
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+	.mq-align-card-center{
+		margin-left: 17%;
+	}
+	#colunaDireitaTitulo{
+		font-family: 'Graphik';
+		font-weight: 500;
+		margin-bottom: 0%;
+		padding-top: 5%;
+		padding-left: 3%;
+		letter-spacing: -0.03em;
+		font-size: 3.5rem;
+		line-height: 1.16;
+		color: rgb(255, 255, 255);
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-align: left;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;	
+	}
+	
+	#subtitulo1{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		margin-bottom: 2%;
+		font-size: 1.47rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#subtitulo2{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: left;
+		margin-left: 5%;
+		margin-bottom: 5%;
+		font-size: 1.47rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp1{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		padding-left: 4%;
+		font-size: 1.20rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp2{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: justify;
+		margin-right: 5%;
+		margin-left: 40%;
+		margin-bottom: 10%;
+		font-size: 1.20rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdsmLink:hover, .cdsmLink:focus {
+		color: white;
+		text-decoration: none;
+		background-size: 100% 8%, 100% 8%;
+	}
+	
+	#cdsmLink {
+		margin-right: 5%;
+		margin-left: 40%;
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		font-size: 1.34rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		display: inline-flex;
+		-webkit-box-align: center;
+		align-items:center;
+		background-repeat: no-repeat;
+		background-position: 0px 100%, 100% 100%;
+		background-size: 0px 8%, 100% 8%;
+		transition: background-size 0.2s ease-in-out 0s;
+		transition-property: background-size;
+		transition-duration: 0.75s;
+		transition-timing-function: ease-in-out;
+		transition-delay: 0s;
+		background-image: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(120deg, transparent, transparent);
+	}
+}
+
+
+
+/* 
+============================================START MEDIAQUERY 6=============================================
+=>Especificações da regra/condição da Media Query
+
+#DEVICE = Most of the Smartphones Mobiles (Portrait)
+#SCREEN = B/w 320px to 479px
+==============================================END MEDIAQUERY 6=============================================
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+	
+	#colunaDireitaTitulo.cdtMobile{
+		font-family: 'Graphik';
+		font-weight: 500;
+		padding-top: 1%;
+		padding-left: 3%;
+		letter-spacing: -0.03em;
+		font-size: 2.5rem;
+		line-height: 1.16;
+		color: rgb(255, 255, 255);
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-align: left;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;	
+	}
+	
+	#subtitulo1{
+		color: white;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: justify;
+		margin-right: 3%;
+		margin-bottom: 3%;
+		margin-left: 3%;
+		font-size: 1.30rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#subtitulo2{
+		color: white;
+		font-family: 'Graphik';
+		font-weight: 500;
+		text-align: right;
+		margin-right: 5%;
+		margin-bottom: 3%;
+		font-size: 1.35rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp1{
+		padding: 3%;
+		border-radius: 2%;
+		background-color: rgba(255, 255, 255, 0.911);
+		color: #ff4800;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: justify;
+		
+		margin-bottom: 2%;
+		font-size: 1.25rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdp2{
+		padding: 3%;
+		border-radius: 2%;
+		background-color: rgba(255, 255, 255, 0.911);
+		color: #ff4800;
+		font-family: 'Graphik-SemiBold';
+		font-weight: 500;
+		text-align: justify;
+		margin-bottom: 0%;
+		font-size: 1.25rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		-webkit-font-smoothing: antialiased;
+		appearance: none;
+		text-size-adjust: 100%;
+		text-rendering: optimizelegibility;
+	}
+	
+	#cdsmLink:hover, .cdsmLink:focus {
+		color: white;
+		text-decoration: none;
+		background-size: 100% 8%, 100% 8%;
+	}
+	
+	#cdsmLink {
+		margin-right: 3%;
+		margin-left: 3%;
+		color: white;
+		text-shadow: black -1px 0px 3px;
+		font-family: 'Graphik';
+		font-weight: 500;
+		font-size: 1.48rem;
+		line-height: 1.32;
+		letter-spacing: -0.03em;
+		display: inline-flex;
+		-webkit-box-align: center;
+		align-items:center;
+		background-repeat: no-repeat;
+		background-position: 0px 100%, 100% 100%;
+		background-size: 0px 8%, 100% 8%;
+		transition: background-size 0.2s ease-in-out 0s;
+		transition-property: background-size;
+		transition-duration: 0.75s;
+		transition-timing-function: ease-in-out;
+		transition-delay: 0s;
+		background-image: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(120deg, transparent, transparent);
+	}
+}
