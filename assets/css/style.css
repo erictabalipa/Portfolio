@@ -16,6 +16,10 @@
   display: none;
 }
 
+#homeName{
+  margin-top: 8rem!important;
+  line-height: 3rem!important;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
