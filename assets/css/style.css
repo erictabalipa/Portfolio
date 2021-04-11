@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+#smokeEffect{
+position: fixed;
+z-index: -1;
+}
+
 #header.header-top .container .navbar{
   margin-left: 15%;
 }
@@ -16,9 +21,9 @@
   display: none;
 }
 
-#homeName{
-  margin-top: 8rem!important;
-  line-height: 3rem!important;
+#myName{
+  margin-bottom: 4rem!important;
+  font-size: 65px!important;
 }
 
 body {
@@ -32,12 +37,13 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/homeBackground.png") top right no-repeat;
+  background:url("../img/backgrounVideo.mp4") top right;
+  background: #040404 url("../img/back.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;
+ 
   z-index: -1;
 }
 
