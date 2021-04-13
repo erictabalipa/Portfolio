@@ -25,16 +25,27 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- JS MAKEPDF -->
+  <script src='build/pdfmake.min.js'></script>
+  <script src='build/vfs_fonts.js'></script>
+  <script src="build/pdfMakeCV.js"></script>
+  <script src="js/fontawesome-5.7.0-pro-edition/fontawesomepro.js"></script>
+
+  
+    
+
 </head>
 
 <body>
-  <video id="smokeEffect" src="assets/img/backgrounVideo.mp4" autoplay muted loop vw-100></video>
+
+  <video id="smokeEffect" src="assets/img/backgrounVideo.mp4" autoplay muted loop ></video>
+  <video id="smokeEffectMobile" src="assets/img/vidMobile.mp4" autoplay muted loop ></video>
+
 
   <!-- ======= Header ======= -->
   <header id="header"> 
     <div class="container">
-      <div class="stars" ></div>
-      <h1 id="myName">Eric Tabalipa</h1>
+      <h1 id="myName">Eric Tabalipa</h1><br>
       <div class="hero-content">
         <h1><span id="homeTypedTitle" class="typed" data-typed-items="UI | UX Designer, Developer, Customer Experience"></span></h1>
       </div>
@@ -46,18 +57,25 @@
           <li><a class="nav-link active" href="#header">Inicio</a></li>
           <li><a class="nav-link" href="#about">Sobre mim</a></li>
           <li><a class="nav-link" href="#resume">Experiência</a></li>
-          <li><a class="nav-link" href="#services">Conhecimentos</a></li>
+          <li><a class="nav-link" href="#services">Áreas de atuação</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+      <div class="row mt-5">
+        <div class="col-md-5">
+          <button id="downloadPdfCV" type="button" class="btn btn-secondary"  onclick="downloadCV();" style="border-color: #29cc61; color: white; background-color: #242323;" >Download CV &nbsp;<i class="ri-download-cloud-2-line"></i></button>
+          <button id="imprimirPdfCV" type="button" class="btn btn-primary" onclick="imprimirCV();" style="border-color: #29cc61; color: white; background-color: #242323;" >Imprimir CV &nbsp;<i class="ri-download-cloud-2-line"></i>
+            Imprimir
+        </button>
+        </div>
+      </div>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="twitter"><i class="bi bi-github"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
 
     </div>
@@ -80,7 +98,7 @@
           <img src="assets/img/perfil.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>UI/UX &amp; Front-end Developer</h3>
+          <h3>UI/UX Designer, Front-end Developer &amp; <br>Customer Service | Success </h3>
           <p class="font-italic">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua.
@@ -91,7 +109,7 @@
                 <li><i class="bi bi-chevron-right"></i> <strong>Data de nascimento:</strong> <span>11/06/1998</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>22</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Cidade - Estado:</strong> <span>Curitiba, PR</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.erictabalipa.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>portifolio-erictabalipa.vercel.app</span></li>
                 
               </ul>
             </div>
@@ -99,8 +117,8 @@
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Escolaridade:</strong> <span>Superior - Em andamento</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Curso:</strong> <span>Analise e Desenvolvimento de Sistemas</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Disponibilidade de contrato:</strong> <span>CLT, Freelancer</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Disponibilidade para Home Office:</strong> <span>Sim</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Em busca de contrato CLT</strong>
+                <li><i class="bi bi-chevron-right"></i> <strong>Disponível para jornada remota ou presencial</strong>
 
               </ul>
             </div>
@@ -120,35 +138,35 @@
       <div class="row">
 
         <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
+          <div class=" count-box">
+            <i class="ri-lightbulb-flash-line"></i>
+            <h1 class="text-center" style="font-size: 26px; font-weight: 700; text-transform: uppercase; font-family: Poppins, sans-serif;color: #fff;">CRIATIVO</h1>
+            <p>Através de uma busca contínua por novas percepções do mundo.</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
+            <i class="ri-chat-smile-3-line"></i>
+            <h1 class="text-center" style="font-size: 26px; font-weight: 700; text-transform: uppercase; font-family: Poppins, sans-serif;color: #fff;">COMUNICATIVO</h1>
+            <p>Proporcionando facilidade em liderar, engajar e ajudar o time.</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
+            <i class="ri-line-chart-fill"></i>
+            <h1 class="text-center" style="font-size: 26px; font-weight: 700; text-transform: uppercase; font-family: Poppins, sans-serif;color: #fff;">MOTIVADO</h1>
+            <p>Pelo prazer e satisfação de ajudar pessoas através da tecnologia.</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
-          </div>
+            <i class="ri-focus-3-line"></i>
+            <h1 class="text-center" style="font-size: 26px; font-weight: 700; text-transform: uppercase; font-family: Poppins, sans-serif;color: #fff;">RESILIENTE</h1> 
+            <p>Habilidade de em meio ao caos, não ceder à pressões e focar na solução.</p>
+            </div>   
         </div>
 
       </div>
@@ -159,7 +177,7 @@
     <div class="skills container">
 
       <div class="section-title">
-        <h2>Conhecimentos e Habilidades</h2>
+        <h2>Conhecimentos e Nível de domínio</h2>
       </div>
 
       <div class="row skills-content">
@@ -167,9 +185,9 @@
         <div class="col-lg-6">
 
           <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
+            <span class="skill">HTML <i class="val">95%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -181,9 +199,30 @@
           </div>
 
           <div class="progress">
+            <span class="skill">BootStrap <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
             <span class="skill">JavaScript <i class="val">75%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">VUE.JS <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Photoshop <i class="val">25%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -192,23 +231,44 @@
         <div class="col-lg-6">
 
           <div class="progress">
-            <span class="skill">VUE.JS <i class="val">80%</i></span>
+            <span class="skill">PHP <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MySql <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Laravel <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">GIT <i class="val">80%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
           <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+            <span class="skill">Proto.io <i class="val">90%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
           <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <span class="skill">Canva <i class="val">80%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -222,80 +282,56 @@
     <div class="interests container">
 
       <div class="section-title">
-        <h2>Interests</h2>
+        <h2>Vivência e pleno entendimento</h2>
       </div>
 
       <div class="row">
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>Lorem Ipsum</h3>
+            <i class="ri-home-gear-line" style="color: #ffbb2c;"></i>
+            <h3>Startup's</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Dolor Sitema</h3>
+            <i class="ri-terminal-window-line" style="color: #5578ff;"></i>
+            <h3>SaaS</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Sed perspiciatis</h3>
+            <i class="ri-table-2" style="color: #e80368;"></i>
+            <h3>Kanban</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Magni Dolores</h3>
+            <i class="ri-user-voice-line" style="color: #e361ff;"></i>
+            <h3>Gestão e liderança</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Nemo Enim</h3>
+            <i class="ri-team-line" style="color: #47aeff;"></i>
+            <h3>Processos seletivos</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Eiusmod Tempor</h3>
+            <i class="ri-shield-check-line" style="color: #ffa76e;"></i>
+            <h3>QA</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Midela Teren</h3>
+            <i class="ri-key-2-line" style="color: #11dbcf;"></i>
+            <h3>KPI'S</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Pira Neve</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Dirada Pack</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Moton Ideal</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Verdo Park</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
+            <i class="ri-calendar-todo-line" style="color: #4233ff;"></i>
+            <h3>ERP</h3>
           </div>
         </div>
       </div>
@@ -306,22 +342,22 @@
     <div class="testimonials container">
 
       <div class="section-title">
-        <h2>Testimonials</h2>
+        <h2>Gratidão</h2>
       </div>
 
-      <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="3000">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
             <div class="testimonial-item">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                Trabalhar com o Eric foi uma experiência única, um profissional ímpar que ensina seus colegas e clientes com muita dedicação. Tem uma ótima comunicação e desenvoltura para lidar com todos os desafios. Além de claro ser um excelente marido e pai, sempre presente em nosso dia-a-dia!.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <img src="assets/img/testimonials/testmonials-1.png" class="testimonial-img" alt="">
+              <h3>Danielle Tabalipa</h3>
+              <h4>Esposa - Financial Operations - ConnectPlug</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -329,12 +365,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                Depois de tanta busca em meio a tantos, encontrei o grande e jovem profissional Eric, esse realmente ama o que faz, isso fica perceptivel em cada detalhe pensado dos seus desenhos e protótipos até as linhas de programação, superou minhas expectivas e foi muito além do que eu esperava. Profissionalismo e carisma sem igual!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
+              <h3>Raphael Prestes</h3>
+              <h4>CEO &amp; Founder - GroSafety</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -342,12 +378,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                O Eric é um profissional extremamente dedicado a tudo o que faz, sempre buscando a melhor forma de entregar todos os seus projetos, além de ter umas excelente comunicação e abertura com clientes e colegas!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              <img src="assets/img/testimonials/testimonials-3.jpeg" class="testimonial-img" alt="">
+              <h3>Roberto Tavares</h3>
+              <h4>Sales Coordinator - Empresômetro</h4>
             </div>
           </div><!-- End testimonial item -->
 
@@ -355,30 +391,18 @@
             <div class="testimonial-item">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                Tive o prazer de ter tido o Eric como meu gestor durante um ano, sempre muito atencioso e calmo, antes de qualquer decisao analisava todas as possibilidades divindindo elas com todos da equipe, sempre disposto a ajudar, independente de horário ou dia da semana estava sempre ali como ponto de apoio, alem de tudo sempre teve uma ótima relação com todos, independente de cargo, setor e etc. Ele liderava auxiliando, ele mesmo muitas vezes sentava e resolvia o erro conosco para ensinar. Literalmente um exemplo de profissional, gestor e amigo!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
+              <img src="assets/img/testimonials/testimonials-4.jpeg" class="testimonial-img" alt="">
+              <h3>Alysson Maingue</h3>
+              <h4>Customer Success - Ponto Mais</h4>
             </div>
           </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
+          
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
 
       <div class="owl-carousel testimonials-carousel">
@@ -402,71 +426,83 @@
         <div class="col-lg-6">
           <h3 class="resume-title">GroSafety Software</h3>
           <div class="resume-item">
-            <h4>Front-end Developer (4 meses)</h4>
-            <h5>dez. de 2021 - o momento</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            <h4>Front-end Developer</h4>
+            <h5>dez. de 2020 - o momento (4 meses)</h5>
+            <p><em>Curitiba, PR, Brasil - Remoto</em></p>
+            <ul>
+              <li>Desenvolvimento web utilizando HTML, CSS, JQUERY e VUE.JS</li>
+              <li>Alguns trabalhamos em back-end feitos em PHP, utilizando o framework CodeIgneter4 e banco de dados MySQL</li>
+            </ul>
           </div>
           <div class="resume-item">
-            <h4>UX &amp; UI Designer (4 meses)</h4>
-            <h5>dez. de 2021 - o momento</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            <h4>UX &amp; UI Designer</h4>
+            <h5>dez. de 2020 - o momento (4 meses)</h5>
+            <p><em>Curitiba, PR, Brasil - Remoto</em></p>
+            <ul>
+              <li>Idealização, criação e desenvolvimento de fluxos de alto grau de usabilidade e interatividade.</li>
+              <li>Estudo das regras de negócio e requisitos funcionais e não funcionais para garantir que o software não deixe de se tornar completo.</li>
+              <li>Estudo da persona, bem como da área em que o software se situa, visando garantir a mehor experiência de comunicação possível, entre usuário e sistema.</li>
+              <li>Prototipação de telas utilizando o software proto.io e aplicando diversos conceitos de usabilidade e intuitividade mesmo para usuário que interagem pela primeira vez com o software.</li>
+            </ul>
           </div>
 
           <h3 class="resume-title">Leankeep Facility Software</h3>
           <div class="resume-item">
             <h4>Customer Success Manager</h4>
             <h5>dez. de 2020 – mar. de 2021 (4 meses)</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-          </div>
-          <div class="resume-item">
-            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-            <h5>2010 - 2014</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            <p><em>Curitiba, PR, Brasil - Remoto</em></p>
+            <ul>
+              <li>Responsável por key accounts desde o processo de adoção do cliente até a expansão/advocacia.</li>
+              <li>Alinhamento de expectativas, insights e processos internos da empresa.</li>
+              <li>Porta voz do cliente dentro da empresa trazendo suas dores, assim também reduzindo o aumento do número de churns.</li>
+            </ul>
           </div>
         </div>
         <div class="col-lg-6">
           <h3 class="resume-title">ConnectPlug Desenvolvimento de Softwares</h3>
           <div class="resume-item">
-            <h4>Customer Success Analyst</h4>
+            <h4>Customer Success Manager</h4>
             <h5>fev. de 2020 – mai. de 2020 (4 meses)</h5>
-            <p><em>Curitiba, PR, Brasil</em></p>
-            <p>
+            <p><em>Curitiba, PR, Brasil - Remoto</em></p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+              <li>Responsável por key accounts desde  o processo de adoção do cliente até a expansão/advocacia.</li>
+              <li>Alinhamento de expectativas, insights e processos internos da empresa.</li>
+              <li>Porta voz do cliente dentro da empresa trazendo suas dores, assim também reduzindo o aumento do número de churns.</li>
             </ul>
             </p>
           </div>
           <div class="resume-item">
-            <h4>Head of Customer Service</h4>
+            <h4>Head of Customer Support</h4>
             <h5>mar. de 2019 – fev. de 2020 (1 ano)</h5>
             <p><em>Curitiba, PR, Brasil</em></p>
             <p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+              <li>Liderança de uma equipe de 12 analistas.</li>
+              <li>Cultivar e aplicar a cultura do feedback.</li>
+              <li>Controle de métricas e KPI's do setor como CSAT, FCR, TCR, TMA, SLA entre outros.</li>
+              <li>Promover o engajamento e trabalho em equipe do time.</li>
+              <li>Cuidar da saúde mental de cada um para que gerassem o melhor resultado.</li>
+              <li>Desenvolver novos processos e revisar antigos para melhorar o desempenho e qualidade do atendimento prestado pelo suporte.</li>
             </ul>
             </p>
           </div>
           <div class="resume-item">
-            <h4>Customer Service Analyst</h4>
+            <h4>Customer Support Analyst</h4>
             <h5>out. 2018 - mar. 2019 (6 meses)</h5>
             <p><em>Curitiba, PR, Brasil</em></p>
             <p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+              <li>Análise de possíveis bugs, testes de novas funcionalidades e versões. Apoio ao suporte N1 em casos mais complexos, filtro de chamados direcionados a desenvolvimento para verificar se realmente era um erro e caso fosse, classificar sua gravidade e coletar mais informações. </li>
             </ul>
             </p>
           </div>
           <div class="resume-item">
-            <h4>Customer Service Intern</h4>
+            <h4>Customer Support Intern</h4>
             <h5>mai. de 2017 - out. 2018 (1 ano e 6 meses)</h5>
             <p><em>Curitiba, PR, Brasil</em></p>
             <p>
             <ul>
-              <li>Atendimento ao cliente, treinamentos, configurações de hardwares periféricos ao software, analise e identificação de bugs.</li>
+              <li>Prestação de suporte via e-mail, telefone e whatsapp aos usuários do software, abertura de chamados bem como o controle de chamados que ficavam em aberto.</li>
             </ul>
             </p>
           </div>
@@ -481,56 +517,57 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
+        <h2>Áreas de atuação</h2>
+        <p>Interesses e objetivos</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <div class="icon"><i class="ri-code-box-line"></i></div>
+            <h4><a href="">Desenvolvedor Front-end & FullStack</a></h4>
+            <p><strong>Cargo: </strong>Desenvolvedor front-end Júnior (HTML, CSS, Vue.js, React)<br>
+              Fullstack Júnior (PHP, Laravel, codeIgneter, SQL)</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            <div class="icon"><i class="ri-git-pull-request-fill"></i></div>
+            <h4><a href="">UX Designer</a></h4>
+            <p><strong>Cargo: </strong>Analista de User Experience Júnior. ProductOwner Júnior.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <div class="icon"><i class="ri-terminal-window-line"></i></div>
+            <h4><a href="">UI Designer</a></h4>
+            <p><strong>Cargo: </strong>Analista de User Interface Júnior, Analista de Webdesign Júnior.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            <div class="icon"><i class="ri-user-star-fill"></i></div>
+            <h4><a href="">Customer Experience</a></h4>
+            <p><strong>Cargo: </strong>Analista de Design Júnior, Analista de Customer Experience Júnior.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            <div class="icon"><i class="ri-user-settings-fill"></i></div>
+            <h4><a href="">Customer Support</a></h4>
+            <p><strong>Cargo: </strong>Coordenador, Supervisor ou Head de suporte/atendimento ao cliente.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            <div class="icon"><i class="ri-user-follow-fill"></i></div>
+            <h4><a href="">Customer Success</a></h4>
+            <p><strong>Cargo: </strong>Analista Pleno de Customer Success ou Customer Success Maneger.</p>
           </div>
         </div>
 
@@ -707,7 +744,7 @@
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>Endereço</h3>
-            <p>Rua Paul Cezanne, 101 - Guabirotuba - Curitiba, PR</p>
+            <p>Guabirotuba - Curitiba, PR</p>
           </div>
         </div>
 
@@ -729,13 +766,13 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>E-mail</h3>
-            <p>csteric@hotmail.com</p>
+            <p>tabalipaeric@gmail.com</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
-            <h3>Telefone</h3>
+            <h3>Celular</h3>
             <p>(41) 98712-4411</p>
           </div>
         </div>
@@ -763,17 +800,9 @@
         </div>
         <div class="text-center"><button type="submit">Enviar mensagem</button></div>
       </form>
-
+      
     </div>
   </section><!-- End Contact Section -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -787,8 +816,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script src="build/pdfMakeCV.js"></script>
 
-</body>
+  <script>
+    // Download e impressão CV em PDF
+    function downloadCV() {
+      pdfMake.createPdf(layoutPDFCV).download('Eric-Tabalipa-CV.pdf');
+    }
+    function imprimirCV() {
+      pdfMake.createPdf(layoutPDFCV).print();
+    }
+  </script>
 
 </html>
