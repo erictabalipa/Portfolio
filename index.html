@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -10,6 +11,9 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fontawesome ProEdition Icons -->
+  <script src="assets/js/fontawesome-5.7.0-pro-edition/fontawesomepro.js"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -21,18 +25,15 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mdb.min.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- JS MAKEPDF -->
+  <!-- MakePDF JS Files -->
   <script src='build/pdfmake.min.js'></script>
   <script src='build/vfs_fonts.js'></script>
   <script src="build/pdfMakeCV.js"></script>
-  <script src="js/fontawesome-5.7.0-pro-edition/fontawesomepro.js"></script>
-
-  
-    
 
 </head>
 
@@ -60,24 +61,15 @@
           <li><a class="nav-link" href="#services">Áreas de atuação</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contato</a></li>
+          <li><a id="downloadPdfCV" class="nav-link" onclick="downloadCV();">Download do Currículo <i style="font-size: 17px;" class="ri-download-line"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <div class="row mt-5">
-        <div class="col-md-5">
-          <button id="downloadPdfCV" type="button" class="btn btn-secondary"  onclick="downloadCV();" style="border-color: #29cc61; color: white; background-color: #242323;" >Download CV &nbsp;<i class="ri-download-cloud-2-line"></i></button>
-          <button id="imprimirPdfCV" type="button" class="btn btn-primary" onclick="imprimirCV();" style="border-color: #29cc61; color: white; background-color: #242323;" >Imprimir CV &nbsp;<i class="ri-download-cloud-2-line"></i>
-            Imprimir
-        </button>
-        </div>
-      </div>
       <div class="social-links">
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="twitter"><i class="bi bi-github"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-youtube"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/eric-cezar-de-souza-t-940b50b6/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://bitbucket.org/erictabalipa_/" class="github"><i class="fab fa-bitbucket"></i></a>
+        <a href="https://www.instagram.com/erictabalipa_/" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
-
     </div>
   </header>
   <!-- End Header -->
@@ -100,8 +92,8 @@
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>UI/UX Designer, Front-end Developer &amp; <br>Customer Service | Success </h3>
           <p class="font-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Papai e super-herói do Lucca!<br>
+            Princípios de um super-horói: Empatia, respeito, humildade, solidariedade, positividade, responsabilidade.
           </p>
           <div class="row">
             <div class="col-lg-6">
@@ -109,8 +101,7 @@
                 <li><i class="bi bi-chevron-right"></i> <strong>Data de nascimento:</strong> <span>11/06/1998</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>22</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Cidade - Estado:</strong> <span>Curitiba, PR</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>portifolio-erictabalipa.vercel.app</span></li>
-                
+                <li><i class="bi bi-chevron-right"></i> <strong>Disponível para jornada remota ou presencial</strong>
               </ul>
             </div>
             <div class="col-lg-6">
@@ -118,14 +109,21 @@
                 <li><i class="bi bi-chevron-right"></i> <strong>Escolaridade:</strong> <span>Superior - Em andamento</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Curso:</strong> <span>Analise e Desenvolvimento de Sistemas</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Em busca de contrato CLT</strong>
-                <li><i class="bi bi-chevron-right"></i> <strong>Disponível para jornada remota ou presencial</strong>
-
               </ul>
             </div>
           </div>
           <p>
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            Estou buscando ser e fazer algo maior do que esperam, procuro me superar diariamente, desafios me movem e como resultado me trazem conhecimentos que me levam a cada dia mais perto do topo da minha montanha, eu já comecei minha escalada! E você?
+          </p>
+          <p style="font-size: 18px!important; margin-top: 1rem!important; font-style: italic;">
+            "Você não tem que ser grande para começar, mas você tem que começar para ser grande."
+            <div class="row">
+              <div style="font-size: 14px!important; font-style: italic;" class="col-10 text-right">
+                Autor: Zig Ziglar
+              </div>
+             
+            </div>
+             
           </p>
         </div>
       </div>
@@ -391,7 +389,7 @@
             <div class="testimonial-item">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Tive o prazer de ter tido o Eric como meu gestor durante um ano, sempre muito atencioso e calmo, antes de qualquer decisao analisava todas as possibilidades divindindo elas com todos da equipe, sempre disposto a ajudar, independente de horário ou dia da semana estava sempre ali como ponto de apoio, alem de tudo sempre teve uma ótima relação com todos, independente de cargo, setor e etc. Ele liderava auxiliando, ele mesmo muitas vezes sentava e resolvia o erro conosco para ensinar. Literalmente um exemplo de profissional, gestor e amigo!
+                Tive o prazer de ter tido o Eric como meu gestor durante um ano, sempre muito atencioso e calmo, antes de qualquer decisao analisava todas as possibilidades divindindo elas com todos da equipe, sempre disposto a ajudar, independente de horário ou dia da semana estava sempre ali como ponto de apoio, alem de tudo sempre teve uma ótima relação com todos, independente de Nível, setor e etc. Ele liderava auxiliando, ele mesmo muitas vezes sentava e resolvia o erro conosco para ensinar. Literalmente um exemplo de profissional, gestor e amigo!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img src="assets/img/testimonials/testimonials-4.jpeg" class="testimonial-img" alt="">
@@ -427,7 +425,7 @@
           <h3 class="resume-title">GroSafety Software</h3>
           <div class="resume-item">
             <h4>Front-end Developer</h4>
-            <h5>dez. de 2020 - o momento (4 meses)</h5>
+            <h5>dez. de 2020 - o momento (5 meses)</h5>
             <p><em>Curitiba, PR, Brasil - Remoto</em></p>
             <ul>
               <li>Desenvolvimento web utilizando HTML, CSS, JQUERY e VUE.JS</li>
@@ -436,7 +434,7 @@
           </div>
           <div class="resume-item">
             <h4>UX &amp; UI Designer</h4>
-            <h5>dez. de 2020 - o momento (4 meses)</h5>
+            <h5>dez. de 2020 - o momento (5 meses)</h5>
             <p><em>Curitiba, PR, Brasil - Remoto</em></p>
             <ul>
               <li>Idealização, criação e desenvolvimento de fluxos de alto grau de usabilidade e interatividade.</li>
@@ -522,52 +520,51 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="col-lg-4 col-md-6 align-items-stretch">
           <div class="icon-box">
             <div class="icon"><i class="ri-code-box-line"></i></div>
-            <h4><a href="">Desenvolvedor Front-end & FullStack</a></h4>
-            <p><strong>Cargo: </strong>Desenvolvedor front-end Júnior (HTML, CSS, Vue.js, React)<br>
-              Fullstack Júnior (PHP, Laravel, codeIgneter, SQL)</p>
+            <h4><a href="">Desenvolvedor Front-end</a></h4>
+            <p><strong>Nível: </strong>Júnior.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0">
           <div class="icon-box">
             <div class="icon"><i class="ri-git-pull-request-fill"></i></div>
             <h4><a href="">UX Designer</a></h4>
-            <p><strong>Cargo: </strong>Analista de User Experience Júnior. ProductOwner Júnior.</p>
+            <p><strong>Nível: </strong>Júnior.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+        <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0">
           <div class="icon-box">
             <div class="icon"><i class="ri-terminal-window-line"></i></div>
             <h4><a href="">UI Designer</a></h4>
-            <p><strong>Cargo: </strong>Analista de User Interface Júnior, Analista de Webdesign Júnior.</p>
+            <p><strong>Nível: </strong>Júnior.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+        <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon"><i class="ri-user-star-fill"></i></div>
             <h4><a href="">Customer Experience</a></h4>
-            <p><strong>Cargo: </strong>Analista de Design Júnior, Analista de Customer Experience Júnior.</p>
+            <p><strong>Nível: </strong>Júnior.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+        <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon"><i class="ri-user-settings-fill"></i></div>
             <h4><a href="">Customer Support</a></h4>
-            <p><strong>Cargo: </strong>Coordenador, Supervisor ou Head de suporte/atendimento ao cliente.</p>
+            <p><strong>Nível: </strong>Sênior, Coordenador.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+        <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon"><i class="ri-user-follow-fill"></i></div>
             <h4><a href="">Customer Success</a></h4>
-            <p><strong>Cargo: </strong>Analista Pleno de Customer Success ou Customer Success Maneger.</p>
+            <p><strong>Nível: </strong>Júnior, Pleno.</p>
           </div>
         </div>
 
@@ -753,11 +750,9 @@
             <i class="bx bx-share-alt"></i>
             <h3>Redes Sociais</h3>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/eric-cezar-de-souza-t-940b50b6/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/erictabalipa_/" class="instagram"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
         </div>
