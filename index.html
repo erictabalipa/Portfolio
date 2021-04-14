@@ -67,6 +67,7 @@
       <div class="social-links">
         <a href="https://www.linkedin.com/in/eric-cezar-de-souza-t-940b50b6/" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://bitbucket.org/erictabalipa_/" class="github"><i class="fab fa-bitbucket"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5541987124411&text=Ol%C3%A1%20Eric%2C%20tudo%20bem%3F%20Acabei%20de%20ver%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20..." class="linkedin"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.instagram.com/erictabalipa_/" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
@@ -80,8 +81,8 @@
     <div class="about-me container">
 
       <div class="section-title">
-        <h2>Sobre mim</h2>
-        <p>Leia e me desafie</p>
+        <h2>Um pouco mais</h2>
+        <p>SOBRE MIM</p>
       </div>
 
       <div class="row">
@@ -586,7 +587,6 @@
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
             <li data-filter=".filter-web">Web</li>
           </ul>
         </div>
@@ -636,20 +636,6 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
@@ -672,34 +658,6 @@
               <p>App</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -749,7 +707,7 @@
             <i class="bx bx-share-alt"></i>
             <h3>Redes Sociais</h3>
             <div class="social-links">
-              <a href="#" class="linkedin"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=5541987124411&text=Ol%C3%A1%20Eric%2C%20tudo%20bem%3F%20Acabei%20de%20ver%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20..." class="whatsapp"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.linkedin.com/in/eric-cezar-de-souza-t-940b50b6/" class="linkedin"><i class="bi bi-linkedin"></i></a>
               <a href="https://www.instagram.com/erictabalipa_/" class="instagram"><i class="bi bi-instagram"></i></a>
             </div>
@@ -772,7 +730,7 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome - empresa" required>
@@ -793,7 +751,17 @@
           <div class="sent-message">Sua mensagem foi enviada. Desde já gradeço seu contato, retorno o mais breve possível!</div>
         </div>
         <div class="text-center"><button type="submit">Enviar mensagem</button></div>
-      </form>
+        <div id="statusMessage"> 
+          <?php
+          if (! empty($message)) {
+              
+              <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+         
+          }
+          ?>
+        </div>
+      </div>
+      </form> -->
       
     </div>
   </section><!-- End Contact Section -->
@@ -822,5 +790,49 @@
       pdfMake.createPdf(layoutPDFCV).print();
     }
   </script>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"
+type="text/javascript"></script>
+<script type="text/javascript">
+function validateContactForm() {
+    var valid = true;
+
+    
+    $(".form-control").css('border', '#e0dfdf 1px solid');
+    var userName = $("#name").val();
+    var userEmail = $("#email").val();
+    var subject = $("#subject").val();
+    var content = $("#message").val();
+    
+    if (userName == "") {
+        $("#name").html("Required.");
+        $("#name").css('border', '#e66262 1px solid');
+        valid = false;
+    }
+    if (userEmail == "") {
+        $("#email").html("Required.");
+        $("#email").css('border', '#e66262 1px solid');
+        valid = false;
+    }
+    if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+    {
+        $("#email").html("Invalid Email Address.");
+        $("#email").css('border', '#e66262 1px solid');
+        valid = false;
+    }
+
+    if (subject == "") {
+        $("#subject").html("Required.");
+        $("#subject").css('border', '#e66262 1px solid');
+        valid = false;
+    }
+    if (content == "") {
+        $("#message").html("Required.");
+        $("#message").css('border', '#e66262 1px solid');
+        valid = false;
+    }
+    return valid;
+}
+</script>
 
 </html>
