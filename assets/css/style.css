@@ -309,10 +309,10 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 
-  .portfolio-details-slider.swiper-container .swiper-wrapper.align-items-center .swiper-slide > img{
-    max-width: 375px!important; 
-    max-height: 812px!important;
-  }
+ img{
+   max-width: 100%;
+   
+ }
   
 }
 
@@ -949,7 +949,7 @@ section .container {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.8);
+  background: black;
   position: fixed;
   left: 0;
   right: 0;
