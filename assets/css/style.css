@@ -28,7 +28,7 @@ z-index: -1;
   margin-left: 5%;
 }
 
-#header.header-top .container .hero-content h1 span{
+#header.header-top .container .hero-content h1 {
   display: none;
 }
 
@@ -207,9 +207,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
   }
   #myName{
-    margin-top: 2rem!important;
-    font-size: 40px!important;
+    display: none;
   }
+
+  
   
 }
 
