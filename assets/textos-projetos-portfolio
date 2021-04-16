@@ -1,0 +1,18 @@
+APPLEANKEEP: OKK
+
+PDFGROSAFETY:
+Nesse projeto desenhei fluxo e interface, bem como realizei o desenvolvimento da funcionalidade, gerar arquivos em PDF dos relatórios do sistema para que impressão e download pudessem ser realizados com facilidade. Na parte de desenvolvimento utilizei a biblioteca PDFMake, o qual atendeu todas as minhas necessidades.
+ O maior desafio desse projeto foi a organização do layout do arquivo, pois existia uma grande quantidade de informações que deveriam aparecer em um espaço que era limitado (A4). Depois de vários rascunhos, desenhos e pesquisaconsegui elaborar um relatório completo e ao mesmo tempo organizado e ainda, destacando as principais informações de uma forma que ao bater o olho o usuário conseguisse captar os dados mais relevates do relatório.
+
+
+GROSAFETY:
+Esse projeto está sendo desenvolvido e tem como foco a gestão de risco ocupacional, comecei realizando alguns ajustes iniciais e acabei me envolvendo bastante, no sistema atual fiz ceraca de 90% do front-end existente, entre as funcionalidades e módulos estão alguns como dashboard, controle financeiro, cadastro de equipaments de segunça e controle de estoque, relatórios estáticos e dinâmicos, cadastro de agendamentos e controle de empréstimo de equipamentos. Recentemente começamos a fazer algumas alterações e melhorias nas funcionalidades existem para posteriormente avançar com nova, uma das melhorias que estamos analisando é a migração do front-end para vue.js, pois atualemente esta em HTML, CSS (bootstrap e puro) e JAVASCRIPT (JQuery).
+
+PORTIFOLIO:
+Buscando sempre fazer diferente, enxergar além do que os olhos podem ver e descobrir ou até mesmo criar percepções diferentes do mundo, tive a ideia e agora o resultado, de expressar um pouco da minha criatividade unida com minha experiência e paixão pela tecnologia.
+O site foi desenvolvido em HTML, CSS (BOOTSTRAP), JAVASCRIPT(JQUERY) e agora estou migrando para vue.js o que me ajuda a treinar o framework também, vou continuar adicionando funcionalidades e novos projetos, dessa maneira estrá sempre atualizado.
+
+LOGINGROSAFETY:
+Acredito que um elemento essêncial em um software é como ele se comunica com o usuário (muitos não se comunicam), muito se fala sobre usabilidade e intuitividade, gosto de pensar e criar sempre partindo do ponto de vista que o software é um auxiliar, conselheiro, professor imaginário e que tenho que fazer com que ele se comunique com as pessoas de forma simples e funcional. E sempre gosto de deixar claro ao usuário que o software está ali ao seu lado, que entende ele e que sabe de tudo que ocorre no mundo real, dessa forma pode-se passar confiança ao usuário o que desperta o querer entender e querer saber sobre o sistema e isso já é um grande passo para chegar a um projeto com alto nivel de usabilidade e intuitividade.
+Pensando nisso criei essa tela de login, onde no momento que o usuário está prestes a ter o primeiro contato com a ferramenta, lembramos ele que sim, nós estamos aqui e sabemos da situação de crise e dificuldade que não só ele mas todos os usuários estão passando devido a pandemia e se ele precisar poderá contar conosco.
+Isso pode fazer com que em momento de dúvida ou frustação com o software ele se lembre que não tem problema, pois basta nos chamar que vamos ampará-lo.
