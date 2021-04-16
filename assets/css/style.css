@@ -201,11 +201,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header.header-top {
-    height: 60px;
+    height: 50px;
   }
   #header.header-top h1 {
     font-size: 26px;
   }
+  #myName{
+    margin-top: 2rem!important;
+    font-size: 40px!important;
+  }
+  
 }
 
 .text-right{
@@ -302,6 +307,12 @@ h1, h2, h3, h4, h5, h6 {
   .navbar ul {
     display: none;
   }
+
+  .portfolio-details-slider.swiper-container .swiper-wrapper.align-items-center .swiper-slide > img{
+    max-width: 375px!important; 
+    max-height: 812px!important;
+  }
+  
 }
 
 .navbar-mobile {
@@ -388,7 +399,7 @@ section .container {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
+  /* line-height: 1px; */
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
