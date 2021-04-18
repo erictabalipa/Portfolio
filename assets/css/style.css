@@ -20,21 +20,20 @@ z-index: -1;
   z-index: -1;
 }
 
+#mobileDevFront{
+  display: none;
+}
+
 #downloadPdfCV:hover{
   cursor: pointer;
 }
 
 #header.header-top .container .navbar{
-  margin-left: 5%;
+  margin-left: 0%;
 }
 
 #header.header-top .container .hero-content h1 {
   display: none;
-}
-
-#myName{
-  margin-bottom: 0rem!important;
-  font-size: 50px!important;
 }
 
 body {
@@ -54,7 +53,6 @@ body::before {
   left: 0;
   right: 0;
   top: 0;
- 
   z-index: -1;
 }
 
@@ -155,6 +153,11 @@ h1, h2, h3, h4, h5, h6 {
   #header h1 {
     font-size: 36px;
   }
+
+  #header h1 span{
+    font-size: 30px;
+  }
+
   #header h2 {
     font-size: 18.3px;
     line-height: 40px;
@@ -193,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top .container {
   display: flex;
   align-items: center;
+  flex-direction: row!important;
 }
 
 #header.header-top .navbar {
@@ -201,17 +205,19 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header.header-top {
-    height: 50px;
+    height: 60px;
   }
   #header.header-top h1 {
     font-size: 26px;
   }
-  #myName{
-    display: none;
+
+  #mobileDevFront{
+    display: block;
   }
 
-  
-  
+  #desktopDevFront{
+    display: none;
+  }
 }
 
 .text-right{
@@ -323,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
