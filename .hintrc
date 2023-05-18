@@ -15,6 +15,12 @@
       {
         "aria-progressbar-name": "off"
       }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
     ]
   }
 }
