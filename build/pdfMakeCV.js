@@ -49,10 +49,10 @@ var layoutPDFCV = {
 
     // ---------------------------- INÍCIO DO CONTEUDO DO DOCUMENTO --------------------------
     content: [
-    { text: 'Acessar LinkedIn', link: 'https://www.linkedin.com/in/eric-cezar-de-souza-t-940b50b6/', style:'linkedinLinkStylePageOne' },
+    { text: 'Acessar LinkedIn', link: 'https://www.linkedin.com/in/eric-t-940b50b6/', style:'linkedinLinkStylePageOne' },
     { text: 'Acessar portifólio', link: 'https://erictabalipa.vercel.app', style:'portifolioLinkStylePageOne', pageBreak:'after'},
     { text: 'Acessar portifólio', link: 'https://erictabalipa.vercel.app', style:'portifolioLinkStylePageTwo' },
-    { text: 'Acessar LinkedIn', link: 'https://www.linkedin.com/in/eric-cezar-de-souza-t-940b50b6/', style:'linkedinLinkStylePageTwo' },
+    { text: 'Acessar LinkedIn', link: 'https://www.linkedin.com/in/eric-t-940b50b6/', style:'linkedinLinkStylePageTwo' },
     ],
     // ------------------------------------------ FIM ----------------------------------------
 
